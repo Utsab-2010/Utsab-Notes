@@ -8,20 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c4432c56e4f41b8b",
+            "id": "dfdde0a3999d9583",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "75e18eb85f7a57ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability Theory/Well Known Distributions.md",
+                "file": "Deep Learning/1Energy based Models?.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Well Known Distributions"
+              "title": "1Energy based Models?"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,19 +191,30 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "c4432c56e4f41b8b",
+  "active": "75e18eb85f7a57ce",
   "lastOpenFiles": [
-    "Probability Theory/Probability and Statistics.md",
-    "Probability Theory/Deterministic Random Variable.md",
+    "Papers/MaxEnRL via Energy-based Normalising Flows 1.md",
+    "Deep Learning/1Energy based Models?.md",
+    "Deep Learning",
+    "Papers/Neural Ordinary Differential Equations.md",
+    "2026-02-04.md",
+    "Untitled.canvas",
+    "Pasted image 20260204024412.png",
+    "Untitled.md",
+    "Papers/Learning Stable Normalizing-Flow Control for Robotic Manipulation.md",
+    "Pasted image 20260204023611.png",
+    "Pasted image 20260204023452.png",
     "Probability Theory/Well Known Distributions.md",
     "Probability Theory/Total Expectation Theorem.md",
+    "Probability Theory/Independent Random Variables.md",
+    "Papers",
+    "Probability Theory/Probability and Statistics.md",
+    "Probability Theory/Deterministic Random Variable.md",
     "Probability Theory/Law of Iterated Expectations.md",
     "Welcome.md",
-    "Probability Theory/Independent Random Variables.md",
     "Ink/Drawing/2026.2.3 - 10.46am.drawing",
     "Signal Processing/Fundamentals/Fourier Transform.md",
     "Signal Processing/Digital Communication/Untitled.md",
@@ -204,8 +226,6 @@
     "Journal",
     "Ink/Drawing",
     "Ink",
-    "README.md",
-    "Untitled.base",
-    "Algorithms and Data Structures"
+    "README.md"
   ]
 }
