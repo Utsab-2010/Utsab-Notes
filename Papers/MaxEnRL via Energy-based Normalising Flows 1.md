@@ -28,3 +28,8 @@ $$V_\theta(s_t) \approx \alpha \log \left( \frac{1}{M} \sum_{i=1}^M \frac{\exp(Q
 ### The Paper's Solution (MEow)
 
 The authors emphasize that these Monte Carlo approximations introduce **estimation errors and variances**, particularly when using a small number of samples. Their proposed framework, **MEow**, avoids this entirely by using Energy-Based Normalizing Flows to calculate the soft value function **exactly** via the determinant of the Jacobian, eliminating the need for Monte Carlo approximation,.
+
+
+
+## Experiments and Setup
+- Mujoco and Isaac Sym Environments were used.

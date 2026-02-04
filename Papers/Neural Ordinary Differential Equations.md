@@ -1,3 +1,5 @@
+continuous normalizing flows
+
 ### **Continuous-Depth Residual Models**
 
 In traditional **Residual Networks (ResNets)**, the model is built from a sequence of layers that make discrete jumps. Each layer transforms the data by adding a small change to it: $h_{t+1} = h_t + f(h_t, \theta_t)$.
