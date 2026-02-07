@@ -5,7 +5,7 @@ The framework is inspired by **Hamilton-Jacobi (HJ) reachability analysis**, a c
 - Address the weak safety guarantees of other methods
 - Makes it such that an agent can go back to the safe region from a danger zone.
 - Use **Reachability Analysis** but adapt it for unpredictable general RL.
-- Created a REF(reacheability estimation function) - gives probablility that the agent will ever hit a violation in the future starting from current state. 
+- Created a REF(reachability estimation function) - gives probablility that the agent will ever hit a violation in the future starting from current state. 
 - Optimises the Agent's behaviour
 	- Safe Zone: if ref is low focus on maxing rewards
 	- Danger Zone : if ref is high, focus on returning to safe. 
@@ -47,3 +47,4 @@ To prove the theory works, they tested RESPO across three major high-dimensional
 - **Balance**: RESPO consistently achieved higher rewards than other safe algorithms (like FAC or CBF) while maintaining near-zero violations.
 - **Recovery**: In the **Double Integrator** test, they showed that RESPO is one of the few algorithms that can actually "re-enter" the safe set after wandering out, whereas others (like RCRL) stayed failed indefinitely.
 - **Prioritization**: In a multi-drone tunnel test, RESPO successfully prioritized "Wall Avoidance" over "Staying Close," showing it can manage hierarchical safety rules.
+- 
