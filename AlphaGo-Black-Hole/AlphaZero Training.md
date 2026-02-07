@@ -40,3 +40,6 @@ Re-implementations and analyses of the AlphaZero algorithm, such as ELF OpenGo, 
 - **Value Loss Behavior:** Early in training, the value loss often dips and then recovers. This is caused by the model initially overestimating the win rate for one side (e.g., White), causing the opponent (Black) to resign prematurely. This reduces the diversity of game data. The system corrects this by ensuring a diverse set of replay data (sampling both Black and White wins), which stabilizes the value loss.
 - **Tactical Blind Spots (Ladders):** Despite superhuman performance, the training process struggles to master specific recursive tactical patterns, such as "ladders" in Go. These moves, which require long-term lookahead but are conceptually simple for humans, are learned slowly and never fully mastered by the network, likely due to a lack of inductive bias for such patterns in the convolutional architecture.
 - **MCTS Rollouts:** The strength of the trained model is not hard-capped; performance continues to improve significantly if the MCTS is given more time (more rollouts) during inference. For example, doubling the rollouts can boost strength by approximately 200 Elo.
+
+
+### Raw Policy --> Improved Policy?
