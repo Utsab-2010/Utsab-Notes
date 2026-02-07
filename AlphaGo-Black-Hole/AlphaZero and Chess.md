@@ -15,7 +15,7 @@ Monte Carlo Tree Search
 	- explores future moves by selecting those with high move probability and estimated value
 - Allowed MCTS to search significantly fewer positions(80k) than Stochfish (70M) while making superior choices.
 
-
+Training Details: 
 
 ### Surprising Results
 With the self-play training, AlphaZero independently rediscovered and played many of the popular human chess openings. Remember it was never provided data to do this. It discovered them simply by FAFO(fuck around find out). Some openings it used:
