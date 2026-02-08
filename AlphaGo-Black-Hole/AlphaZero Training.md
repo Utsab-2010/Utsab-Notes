@@ -43,3 +43,6 @@ Re-implementations and analyses of the AlphaZero algorithm, such as ELF OpenGo, 
 
 
 ### Raw Policy --> Improved Policy?
+1. NN first outputs the probability vector taking in the state s.
+	- To ensure system also explores, dirichilet noise is added these probabilities at the **root** before the search begins
+2. 
