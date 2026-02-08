@@ -19,4 +19,7 @@ But to summarize once again.
 ### Total Expectation Theorem
 It states that the expectation of random variable X is equal to the sum of the conditional expectations weighted by their respective probabilities.
 While a formal proof is beyond the scope on this video, the intuitive way of thinking about it would be to think of a weighted average the same way we thought of the definition of the expectation.
-Any outcome
+Any outcome X can be broken into sub-scnearios called conditional outcomes X|A. 
+this means that given A has happened
+so E[X|A] means that given that A has happened what is the expected value of X.
+if there can only be two conditional scnearios A1 and A2, then we 
