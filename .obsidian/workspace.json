@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AlphaGo-Black-Hole/AlphaZero Training.md",
+                "file": "Video Ideas/Law of Total Expectations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AlphaZero Training"
+              "title": "Law of Total Expectations"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8e65ad88e544dcf",
@@ -198,10 +197,11 @@
   },
   "active": "fc0f0a19ba85a220",
   "lastOpenFiles": [
+    "Video Ideas/spider_fly_problem.png",
+    "Video Ideas/Law of Total Expectations.md",
     "AlphaGo-Black-Hole/AlphaZero Training.md",
     "AlphaGo-Black-Hole/AlphaZero and Chess.md",
     "AlphaGo-Black-Hole/Alpha-Beta Algorithm (Chess Engines).md",
-    "Video Ideas/Law of Total Expectations.md",
     "Video Ideas/Monte Carlo Tree Search.md",
     "Video Ideas/Untitled.base",
     "Untitled 1.md",
