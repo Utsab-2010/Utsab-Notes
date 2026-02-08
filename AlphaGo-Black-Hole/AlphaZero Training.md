@@ -45,4 +45,30 @@ Re-implementations and analyses of the AlphaZero algorithm, such as ELF OpenGo, 
 ### Raw Policy --> Improved Policy?
 1. NN first outputs the probability vector taking in the state s.
 	- To ensure system also explores, dirichilet noise is added these probabilities at the **root** before the search begins
-2. 
+2. The system runs 800 simulations from this root node guided by the raw policy p. The search traverses the tree using a variant of the **PUCT algorithm** (Predictor + Upper Confidence Bound applied to Trees). For every step in the simulation, the algorithm selects the move that maximizes the following combination:
+
+$$ \text{Score} = Q(s, a) + U(s, a) $$
+
+- **$Q(s, a)$ (Exploitation):** The mean value (expected win rate) of the move $a$ so far, derived from previous simulations that went down this path. (need to store these)
+- **$U(s, a)$ (Exploration):** A value derived from the raw policy $p$. It is proportional to $\frac{P(s, a)}{1 + N(s, a)}$.
+    - Here, $P(s, a)$ is the raw probability from the network.
+    - $N(s, a)$ is the visit count (how many times this move has been tried in the search).
+3. Once the 800 simulations are done 
+
+Once the 800 simulations are complete, the search stops. The "superior policy" $\pi$ is generated **solely based on the visit counts** of the root node, not the raw probabilities or the win rates directly.
+
+The probability assigned to each move $a$ in the superior policy $\pi$ is proportional to its visit count exponentiated by a temperature parameter $\tau$:
+
+$$ \pi_a \propto N(s, a)^{1/\tau} $$
+
+- **Why is $\pi$ superior?** The raw policy $p$ might miss a tactical trap that appears 5 moves later. The MCTS explores that future path, realizes the danger (lowering the $Q$ value), and stops visiting that node. Consequently, the final visit count $N$ for that blunder will be low, and the superior policy $\pi$ will assign it a near-zero probability, effectively "correcting" the network's blind spot.
+- **During Training:** The system typically uses a temperature of $\tau=1$, meaning the probability is directly proportional to the number of visits. This preserves some randomness and diversity for learning.
+- **During Competitive Play:** The system often plays greedily (approaching $\tau \to 0$), selecting the move with the absolute highest visit count.
+
+### Summary of the Transformation
+
+1. **Raw Policy ($p$):** "I instinctively think Move A is 60% likely to be best."
+2. **MCTS (PUCT):** "Let's simulate Move A many times. It looked good initially, but it leads to a loss in 10 moves. Let's devote more simulations to Move B instead."
+3. **Superior Policy ($\pi$):** "After 800 simulations, we spent 10% of our time on Move A and 90% on Move B. Therefore, the new policy is: Move A = 10%, Move B = 90%."
+
+The neural network is then trained to update its weights so that its future raw policy $p$ looks more like this calculated superior policy $\pi$.
