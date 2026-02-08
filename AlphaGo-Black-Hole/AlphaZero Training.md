@@ -31,44 +31,24 @@ The training proceeds through a continuous cycle of self-play and parameter upda
     - **Hyperparameters:** Training typically uses a large batch size (e.g., 4,096) and momentum (0.9). The learning rate is annealed (reduced) over time, starting at 0.2 and dropping eventually to 0.0002.
     - **Exploration Noise:** To ensure the system explores a wide variety of positions, Dirichlet noise is added to the prior probabilities in the root node of the search tree. This noise is scaled inversely to the number of legal moves typical for the game (e.g., chess has fewer moves than Go, so the noise scaling differs).
 
-### Insights on Training Dynamics (from ELF OpenGo)
-
-Re-implementations and analyses of the AlphaZero algorithm, such as ELF OpenGo, have provided deeper insights into how this training process unfolds in practice:
-
-- **Learning Progression:** Contrary to the intuition that reinforcement learning agents learn endgames (which are closer to the reward signal) first, analysis shows that the progression of learning for mid-game and end-game moves is nearly identical.
-- **Skill Variance:** The training process exhibits high variance in model strength. Even as the model generally improves, its performance can fluctuate significantly, and simply lowering the learning rate does not necessarily stabilize this variance.
-- **Value Loss Behavior:** Early in training, the value loss often dips and then recovers. This is caused by the model initially overestimating the win rate for one side (e.g., White), causing the opponent (Black) to resign prematurely. This reduces the diversity of game data. The system corrects this by ensuring a diverse set of replay data (sampling both Black and White wins), which stabilizes the value loss.
-- **Tactical Blind Spots (Ladders):** Despite superhuman performance, the training process struggles to master specific recursive tactical patterns, such as "ladders" in Go. These moves, which require long-term lookahead but are conceptually simple for humans, are learned slowly and never fully mastered by the network, likely due to a lack of inductive bias for such patterns in the convolutional architecture.
-- **MCTS Rollouts:** The strength of the trained model is not hard-capped; performance continues to improve significantly if the MCTS is given more time (more rollouts) during inference. For example, doubling the rollouts can boost strength by approximately 200 Elo.
-
-
 ### Raw Policy --> Improved Policy?
 1. NN first outputs the probability vector taking in the state s.
-	- To ensure system also explores, dirichilet noise is added these probabilities at the **root** before the search begins
-2. The system runs 800 simulations from this root node guided by the raw policy p. The search traverses the tree using a variant of the **PUCT algorithm** (Predictor + Upper Confidence Bound applied to Trees). For every step in the simulation, the algorithm selects the move that maximizes the following combination:
-
-$$ \text{Score} = Q(s, a) + U(s, a) $$
-
+	- To ensure system also explores, **Dirichlet noise** is added these probabilities at the **root** before the search begins
+2. The system runs 800 simulations from this root node guided by the raw policy p. The search traverses the tree using a variant of the **PUCT algorithm** (Predictor + Upper Confidence Bound applied to Trees). For every step in the simulation, the algorithm selects the move that maximizes the following combination:$$ \text{Score} = Q(s, a) + U(s, a) $$
 - **$Q(s, a)$ (Exploitation):** The mean value (expected win rate) of the move $a$ so far, derived from previous simulations that went down this path. (need to store these)
-- **$U(s, a)$ (Exploration):** A value derived from the raw policy $p$. It is proportional to $\frac{P(s, a)}{1 + N(s, a)}$.
+- **$U(s, a)$ (Exploration):** A value derived from the raw policy $p$. It is $$U(s, a) = C_{puct} \cdot P(s, a) \cdot \frac{\sqrt{\sum_b N(s, b)}}{1 + N(s, a)}$$
     - Here, $P(s, a)$ is the raw probability from the network.
     - $N(s, a)$ is the visit count (how many times this move has been tried in the search).
-3. Once the 800 simulations are done 
+3. Once the 800 simulations are done are complete, the search stops. The "superior policy" $\pi$ is generated **solely based on the visit counts** of the root node, not the raw probabilities or the win rates directly.
+	The probability assigned to each move $a$ in the superior policy $\pi$ is proportional to its visit count exponentiated by a temperature parameter $\tau$:
+	$$\pi(a|s_t) = \frac{N(s_t, a)^{1/\tau}}{\sum_b N(s_t, b)^{1/\tau}}$$
 
-Once the 800 simulations are complete, the search stops. The "superior policy" $\pi$ is generated **solely based on the visit counts** of the root node, not the raw probabilities or the win rates directly.
+	- **Why is $\pi$ superior?** The raw policy $p$ might miss a tactical trap that appears 5 moves later. The MCTS explores that future path, realizes the danger (lowering the $Q$ value), and stops visiting that node. Consequently, the final visit count $N$ for that blunder will be low, and the superior policy $\pi$ will assign it a near-zero probability, effectively "correcting" the network's blind spot.
+	- During training $\tau = 1$ is a good choice but during eval it would be $\tau \to 0$.
 
-The probability assigned to each move $a$ in the superior policy $\pi$ is proportional to its visit count exponentiated by a temperature parameter $\tau$:
+4. $(s_{t},\pi_{t},z)$ is stored in the replay buffer.
+	- z is the final game outcome
+	- $\pi_{t}$ is the probability distribution over the moves for this state.
 
-$$ \pi_a \propto N(s, a)^{1/\tau} $$
 
-- **Why is $\pi$ superior?** The raw policy $p$ might miss a tactical trap that appears 5 moves later. The MCTS explores that future path, realizes the danger (lowering the $Q$ value), and stops visiting that node. Consequently, the final visit count $N$ for that blunder will be low, and the superior policy $\pi$ will assign it a near-zero probability, effectively "correcting" the network's blind spot.
-- **During Training:** The system typically uses a temperature of $\tau=1$, meaning the probability is directly proportional to the number of visits. This preserves some randomness and diversity for learning.
-- **During Competitive Play:** The system often plays greedily (approaching $\tau \to 0$), selecting the move with the absolute highest visit count.
-
-### Summary of the Transformation
-
-1. **Raw Policy ($p$):** "I instinctively think Move A is 60% likely to be best."
-2. **MCTS (PUCT):** "Let's simulate Move A many times. It looked good initially, but it leads to a loss in 10 moves. Let's devote more simulations to Move B instead."
-3. **Superior Policy ($\pi$):** "After 800 simulations, we spent 10% of our time on Move A and 90% on Move B. Therefore, the new policy is: Move A = 10%, Move B = 90%."
-
-The neural network is then trained to update its weights so that its future raw policy $p$ looks more like this calculated superior policy $\pi$.
+> **Key Insight:** The "Training Policy" is effectively using MCTS to create a "teacher" for the neural network. The network provides the intuition ($p$), MCTS does the heavy lifting to find a better move ($\pi$), and then the network is updated to make that better move its new intuition.
