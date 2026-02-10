@@ -22,4 +22,19 @@ While a formal proof is beyond the scope on this video, the intuitive way of thi
 Any outcome X can be broken into sub-scnearios called conditional outcomes X|A. 
 this means that given A has happened
 so E[X|A] means that given that A has happened what is the expected value of X.
-if there can only be two conditional scnearios A1 and A2, then we 
+if there can only be two conditional scnearios A1 and A2, then we can break the outcome of random variable X into X|A1 and X| A2.  Now when we  write the law of total expectations , think of this as the mean of these  two probable outcomes, like a normal mean of a random variable having two possible values, you write it as 
+$$\large  
+\mathbb{E}[X]  
+= \mathbb{E}[X \mid A_1] . P(A_1)  + \mathbb{E}[X \mid A_2] . P(A_2)
+$$
+
+
+This is good but why am I talking about this theorem??
+This will be better illustrated by this following problem.
+Consider this
+![[Pasted image 20260211022422.png]]
+
+How would you solve this ? If you want to try it out give it a go.
+
+Let us mark X as the random
+While one approach would be to calculate the probability distribution of PMF of  X 
