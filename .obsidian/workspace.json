@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability Theory/Unique Properties of Gaussian RVs.md",
+                "file": "Probability Theory/Well Known Distributions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unique Properties of Gaussian RVs"
+              "title": "Well Known Distributions"
             }
           }
         ]
@@ -198,8 +198,8 @@
   },
   "active": "fc0f0a19ba85a220",
   "lastOpenFiles": [
-    "Probability Theory/Well Known Distributions.md",
     "Probability Theory/Unique Properties of Gaussian RVs.md",
+    "Probability Theory/Well Known Distributions.md",
     "Probability Theory/Total Expectation Theorem.md",
     "Probability Theory/Probability and Statistics.md",
     "Probability Theory/Law of Iterated Expectations.md",
