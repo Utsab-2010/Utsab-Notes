@@ -12,7 +12,7 @@ $$
 
 ---
 
-## Law of Total Expectation (Conditioning on a Discrete Random Variable)
+### Law of Total Expectation (Conditioning on a Discrete Random Variable)
 
 $$\large
 \mathbb{E}[X]  
