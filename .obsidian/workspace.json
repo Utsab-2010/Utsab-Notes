@@ -8,17 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fc0f0a19ba85a220",
+            "id": "051f87221cc5039c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Center.md",
+                "file": "Papers/InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Command Center"
+              "title": "InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields"
+            }
+          },
+          {
+            "id": "513878e2bf5c3273",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neural Implicit Fields.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Neural Implicit Fields"
             }
           }
         ]
@@ -78,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8e65ad88e544dcf",
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Probability Theory/Well Known Distributions.md",
+                "file": "Papers/InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Well Known Distributions"
+              "title": "Outgoing links from InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields"
             }
           },
           {
@@ -176,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -195,13 +210,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fc0f0a19ba85a220",
+  "active": "051f87221cc5039c",
   "lastOpenFiles": [
+    "Neural Implicit Fields.md",
+    "Papers/InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Papers/Paper List.base",
+    "Papers/Untitled",
+    "Command Center.md",
     "Video Ideas/Law of Total Expectations.md",
     "Notion/Project Planner/C# Basics and a game fd2b03fabd5c4cd0be68a26270688774.md",
     "Notion/Project Planner/Autograd System in C++ 25f033ce2ca58036a325e151d2949da0.md",
     "Notion/Command Center/Summer Logs 2025 1e4033ce2ca5802f9054c92453e3200b.md",
-    "Command Center.md",
     "Notion/Project Planner/Twitter based stock trading 2d0033ce2ca58046b57fcd7acae1a7ae.md",
     "Notion/Project Planner/Untitled 2e6033ce2ca580abaddaee794deee1e8.md",
     "Notion/Project Planner/String Art Research 209033ce2ca58046b61bc97dfb45ff72.md",
@@ -224,15 +245,9 @@
     "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Sand Simulation 6779536088dd4015bbf37eafea111d19.md",
     "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Mine-Chesser 428814e6c4a24933b1cbc8cc29262c44.md",
     "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Light-weight CLIP implementation 2d4033ce2ca580cab259eaec1d671d12.md",
-    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Latex Replacement 231033ce2ca580ab9fc8f4a5936a6750.md",
-    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/GPT-2 but with diffusion 2d2033ce2ca58021a844c3fb680804f6.md",
-    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Continual Art Research 27f033ce2ca58098b0c2ea4122db8a60.md",
-    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Chess AI in Pygame 14f033ce2ca580d9b972ef9f700dde6b.md",
     "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner",
     "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Command Center/Untitled 168033ce2ca580f3ae8ac6cc691c2f73.csv",
     "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Command Center",
-    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner 9cbdb74dc26f464392872c02202abdef_all.csv",
-    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1",
     "Video Ideas/total_expectation_ques.png",
     "Pasted image 20260204023611.png",
     "Pasted image 20260204023452.png",
