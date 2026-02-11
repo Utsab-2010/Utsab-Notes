@@ -1,9 +1,5 @@
 ![[spider_fly_problem.png]]
 
-
-
-
-
 ## Script
 #### Intro
 While going through the course material for a class at my university I stumbled upon this problem. I tried long and hard to solve this but it seemed like I always overcomplicated the train of thought.
@@ -32,9 +28,10 @@ $$
 This is good but why am I talking about this theorem??
 This will be better illustrated by this following problem.
 Consider this
-![[Pasted image 20260211022422.png]]
+![[total_expectation_ques.png]]
 
 How would you solve this ? If you want to try it out give it a go.
 
 Let us mark X as the random
-While one approach would be to calculate the probability distribution of PMF of  X 
+While one approach would be to calculate the probability distribution of PMF of  X and then use that to find out the expectation using the expression we discussed before.
+The other approach would be a clever use of the law of total expectations.

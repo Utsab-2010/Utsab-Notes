@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Video Ideas/Law of Total Expectations.md",
+                "file": "Command Center.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Law of Total Expectations"
+              "title": "Command Center"
             }
           }
         ]
@@ -180,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 481
+    "width": 481,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,48 +195,49 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fc0f0a19ba85a220",
+  "active": "7bcaa384fc72b72a",
   "lastOpenFiles": [
-    "Pasted image 20260211022422.png",
-    "Probability Theory/Total Expectation Theorem.md",
-    "Probability Theory/Probability and Statistics.md",
-    "Probability Theory/Law of Iterated Expectations.md",
-    "Probability Theory/Independent Random Variables.md",
     "Video Ideas/Law of Total Expectations.md",
-    "Video Ideas/Large Sparse Matrix Solvers.md",
-    "Video Ideas/Monte Carlo Tree Search.md",
-    "Video Ideas/Idea Hub.base",
+    "Notion/Project Planner/C# Basics and a game fd2b03fabd5c4cd0be68a26270688774.md",
+    "Notion/Project Planner/Autograd System in C++ 25f033ce2ca58036a325e151d2949da0.md",
+    "Notion/Command Center/Summer Logs 2025 1e4033ce2ca5802f9054c92453e3200b.md",
+    "Command Center.md",
+    "Notion/Project Planner/Twitter based stock trading 2d0033ce2ca58046b57fcd7acae1a7ae.md",
+    "Notion/Project Planner/Untitled 2e6033ce2ca580abaddaee794deee1e8.md",
+    "Notion/Project Planner/String Art Research 209033ce2ca58046b61bc97dfb45ff72.md",
+    "Notion/Project Planner/Sand Simulation 6779536088dd4015bbf37eafea111d19.md",
+    "Notion/Project Planner/Light-weight CLIP implementation 2d4033ce2ca580cab259eaec1d671d12.md",
+    "Notion/Project Planner/Mine-Chesser 428814e6c4a24933b1cbc8cc29262c44.md",
+    "Notion/Project Planner/Latex Replacement 231033ce2ca580ab9fc8f4a5936a6750.md",
+    "Notion/Project Planner/GPT-2 but with diffusion 2d2033ce2ca58021a844c3fb680804f6.md",
+    "Notion/Project Planner/Continual Art Research 27f033ce2ca58098b0c2ea4122db8a60.md",
+    "Notion/Project Planner/Chess AI in Pygame 14f033ce2ca580d9b972ef9f700dde6b.md",
+    "Notion/Command Center/Untitled 168033ce2ca580f3ae8ac6cc691c2f73.csv",
+    "Notion/Project Planner",
+    "Notion/Project Planner 9cbdb74dc26f464392872c02202abdef_all.csv",
+    "Notion/Command Center 27b51d5e3b5149709d88102539d5b417.md",
+    "Notion/Command Center",
+    "Notion",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Untitled 2e6033ce2ca580abaddaee794deee1e8.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Twitter based stock trading 2d0033ce2ca58046b57fcd7acae1a7ae.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/String Art Research 209033ce2ca58046b61bc97dfb45ff72.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Sand Simulation 6779536088dd4015bbf37eafea111d19.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Mine-Chesser 428814e6c4a24933b1cbc8cc29262c44.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Light-weight CLIP implementation 2d4033ce2ca580cab259eaec1d671d12.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Latex Replacement 231033ce2ca580ab9fc8f4a5936a6750.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/GPT-2 but with diffusion 2d2033ce2ca58021a844c3fb680804f6.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Continual Art Research 27f033ce2ca58098b0c2ea4122db8a60.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner/Chess AI in Pygame 14f033ce2ca580d9b972ef9f700dde6b.md",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Command Center/Untitled 168033ce2ca580f3ae8ac6cc691c2f73.csv",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Command Center",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1/Project Planner 9cbdb74dc26f464392872c02202abdef_all.csv",
+    "ExportBlock-cc5f1646-b53c-4fc3-856f-1fce11cf356d-Part-1",
+    "Video Ideas/total_expectation_ques.png",
+    "Pasted image 20260204023611.png",
+    "Pasted image 20260204023452.png",
     "Video Ideas/Untitled.canvas",
     "Video Ideas/spider_fly_problem.png",
-    "Untitled.md",
-    "Pasted image 20260204023452.png",
-    "Probability Theory/Well Known Distributions.md",
-    "Probability Theory/Unique Properties of Gaussian RVs.md",
-    "Probability Theory/Deterministic Random Variable.md",
-    "AlphaGo-Black-Hole/AlphaZero Training.md",
-    "AlphaGo-Black-Hole/AlphaZero and Chess.md",
-    "AlphaGo-Black-Hole/Alpha-Beta Algorithm (Chess Engines).md",
-    "Untitled 1.md",
-    "Video Ideas",
-    "Papers/RESPO (Reachability Estimation for Safe Policy Optimization).md",
-    "AlphaGo-Black-Hole",
-    "Papers/MaxEnRL via Energy-based Normalising Flows 1.md",
-    "Papers/Learning Stable Normalizing-Flow Control for Robotic Manipulation.md",
-    "Papers/Crowd-Aware Robot Navigation with Switching BetweenLearning-Based and Rule-Based Methods Using Normalizing Flows.md",
-    "Pasted image 20260204024412.png",
-    "Pasted image 20260204023611.png",
-    "Papers/Neural Ordinary Differential Equations.md",
-    "Deep Learning/Energy based Models.md",
-    "Welcome.md",
-    "Ink/Drawing/2026.2.3 - 10.46am.drawing",
-    "Signal Processing/Fundamentals/Fourier Transform.md",
-    "Signal Processing/Digital Communication/Untitled.md",
-    "Signal Processing/Fundamentals",
-    "Signal Processing/Digital Communication",
-    "Signal Processing",
-    "Probability Theory",
-    "Journal/2nd Feb, 2026.md",
-    "Journal",
-    "Ink/Drawing"
+    "Pasted image 20260204024412.png"
   ]
 }
