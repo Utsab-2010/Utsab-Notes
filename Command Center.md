@@ -3,9 +3,21 @@
 - [ ] Study ITC and notes
 - [ ] Study Comp Arch - 3 lectures
 - [ ] Start training AlphaZero on black hole
+- [ ] Go through the Infi-Depth paper
 
 
 
-## Weekly Goals
+# Weekly Goals
 - [ ] Get some standard Results with AlphaZero Training
-- [ ] Read 
+- [ ] Read more papers on IITB problem formulation
+- [ ] Organize Obsidian
+	- [ ] Image management
+	- [ ] Base-ing
+- [ ] Get up to date with ITC, Comms and Comp Arch
+- [ ] Internship Applications
+	- [ ] Fill the CMU-LLM work
+	- [ ] Mail Subhadip for a short meet
+	- [ ] Apply for LossFunk Residency
+	- [ ] 
+- [ ] Compile Depth-Estimation work and lock repo for now.
+- [ ] 
