@@ -1,9 +1,15 @@
 ## Daily Tasks
 - [ ] Fold clothes and clean the wardrobe
-- [ ] Study ITC and notes
-- [ ] Study Comp Arch - 3 lectures
+- [ ] Clean up
+- [ ] Coursework
+	- [ ] Study ITC and notes
+	- [ ] Study Comp Arch - 3 lectures
+	- [ ] Finish VLSI Lab
 - [ ] Start training AlphaZero on black hole
 - [ ] Go through the Infi-Depth paper
+- [ ] Clean up Depth Estimation Repo.
+	- [ ] Add new to-dos to the .md
+
 
 
 

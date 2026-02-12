@@ -51,10 +51,10 @@ They implemented this NIF model using a **Local Implicit Decoder**.  It has two 
 	- **AdamW** with LR=$10^{-5}$ 
 	- 800k training steps on 8 NVIDIA GPUs with batch size of 4 per GPU.
 
-|**Stage**|**Operation Type**|**Data Shape**|
-|---|---|---|
-|**Feature Extraction**|Global (ViT)|$1 \times \text{Tokens} \times \text{Channels}$|
-|**Coordinate Grid**|Batch Generation|$H_{out} \times W_{out} \times 2$|
-|**Point Sampling**|Vectorized Lookup|$(H_{out} \cdot W_{out}) \times \text{Channels}$|
-|**Gated Fusion**|Point-wise MLP|$(H_{out} \cdot W_{out}) \times \text{Fused Channels}$|
-|**Final Output**|Reshape|$H_{out} \times W_{out} \times 1$|
+| **Stage**              | **Operation Type** | **Data Shape**                                         |
+| ---------------------- | ------------------ | ------------------------------------------------------ |
+| **Feature Extraction** | Global (ViT)       | $1 \times \text{Tokens} \times \text{Channels}$        |
+| **Coordinate Grid**    | Batch Generation   | $H_{out} \times W_{out} \times 2$                      |
+| **Point Sampling**     | Vectorized Lookup  | $(H_{out} \cdot W_{out}) \times \text{Channels}$       |
+| **Gated Fusion**       | Point-wise MLP     | $(H_{out} \cdot W_{out}) \times \text{Fused Channels}$ |
+| **Final Output**       | Reshape            | $H_{out} \times W_{out} \times 1$                      |
