@@ -233,7 +233,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 481
+    "width": 481,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,7 +248,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7bcaa384fc72b72a",
+  "active": "97d32fa76222da35",
   "lastOpenFiles": [
     "AJB BTP Summary.md",
     "Assets/Images/Pasted image 20260204023452.png",
