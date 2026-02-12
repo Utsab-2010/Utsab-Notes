@@ -4,6 +4,7 @@
 - [ ] Coursework
 	- [ ] Study ITC and notes
 	- [ ] Study Comp Arch - 3 lectures
+	- [ ] 
 	- [ ] Finish VLSI Lab
 - [ ] Start training AlphaZero on black hole
 - [ ] Go through the Infi-Depth paper
