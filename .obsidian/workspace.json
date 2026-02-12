@@ -49,8 +49,7 @@
               "title": "Neural Implicit Fields"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,16 +224,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "97d32fa76222da35",
+  "active": "051f87221cc5039c",
   "lastOpenFiles": [
-    "Papers/InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields.md",
+    "Neural Implicit Fields.md",
     "AJB BTP Summary.md",
+    "Papers/InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields.md",
     "Probability Theory/Probability and Statistics.md",
     "Papers/RESPO (Reachability Estimation for Safe Policy Optimization).md",
     "Probability Theory/Well Known Distributions.md",
     "Probability Theory/Unique Properties of Gaussian RVs.md",
     "Probability Theory/Independent Random Variables.md",
-    "Neural Implicit Fields.md",
     "Untitled 1.md",
     "Untitled.md",
     "Papers/Paper List.base",
