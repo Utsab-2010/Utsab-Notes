@@ -25,14 +25,15 @@
             "id": "97d32fa76222da35",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Command Center.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Command Center"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Index)"
             }
           },
           {
@@ -249,6 +250,7 @@
   },
   "active": "97d32fa76222da35",
   "lastOpenFiles": [
+    "Command Center.md",
     "AJB BTP Summary.md",
     "Assets/Images/Pasted image 20260204023452.png",
     "Assets/Images/Pasted image 20260204023611.png",
@@ -266,7 +268,6 @@
     "Untitled.md",
     "Papers/Paper List.base",
     "Papers/Untitled",
-    "Command Center.md",
     "Video Ideas/Law of Total Expectations.md",
     "Notion/Project Planner/C# Basics and a game fd2b03fabd5c4cd0be68a26270688774.md",
     "Notion/Project Planner/Autograd System in C++ 25f033ce2ca58036a325e151d2949da0.md",
