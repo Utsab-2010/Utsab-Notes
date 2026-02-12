@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "fccd03bf5adfbff8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
+          },
+          {
             "id": "97d32fa76222da35",
             "type": "leaf",
             "state": {
@@ -49,7 +61,8 @@
               "title": "Neural Implicit Fields"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -223,7 +236,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "051f87221cc5039c",
+  "active": "fccd03bf5adfbff8",
   "lastOpenFiles": [
     "Papers/InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields.md",
     "Neural Implicit Fields.md",
