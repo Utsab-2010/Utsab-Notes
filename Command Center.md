@@ -14,7 +14,7 @@
 - [ ] Get some standard Results with AlphaZero Training
 - [ ] Read more papers on IITB problem formulation
 - [ ] Organize Obsidian
-	- [ ] Image management
+	- [x] Image management
 	- [ ] Base-ing
 - [ ] Get up to date with ITC, Comms and Comp Arch
 - [ ] Internship Applications

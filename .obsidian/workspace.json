@@ -13,51 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Center.md",
+                "file": "Video Ideas/Law of Total Expectations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Command Center"
-            }
-          },
-          {
-            "id": "97d32fa76222da35",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Index)"
-            }
-          },
-          {
-            "id": "429583e9f79862bd",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Assets/Images/Pasted image 20260204024412.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260204024412"
-            }
-          },
-          {
-            "id": "d8ccdcbd3a130e98",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Assets/Images/Pasted image 20260204023452.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260204023452"
+              "title": "Law of Total Expectations"
             }
           },
           {
@@ -74,8 +35,7 @@
               "title": "Neural Implicit Fields"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -249,17 +209,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "97d32fa76222da35",
+  "active": "051f87221cc5039c",
   "lastOpenFiles": [
     "Command Center.md",
-    "AJB BTP Summary.md",
+    "Neural Implicit Fields.md",
     "Assets/Images/Pasted image 20260204023452.png",
-    "Assets/Images/Pasted image 20260204023611.png",
     "Assets/Images/Pasted image 20260204024412.png",
+    "AJB BTP Summary.md",
+    "Assets/Images/Pasted image 20260204023611.png",
     "Assets/Images",
     "Assets",
     "Papers/InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields.md",
-    "Neural Implicit Fields.md",
     "Probability Theory/Probability and Statistics.md",
     "Papers/RESPO (Reachability Estimation for Safe Policy Optimization).md",
     "Probability Theory/Well Known Distributions.md",
