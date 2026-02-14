@@ -2,5 +2,6 @@
   "obsidian-latex-suite",
   "ink",
   "obsidian-regex-replace",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-auto-link-title"
 ]
