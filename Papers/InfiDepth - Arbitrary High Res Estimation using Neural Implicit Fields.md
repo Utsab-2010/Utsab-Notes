@@ -2,7 +2,7 @@
 tags:
   - Depth_Estimation
 ---
-Link: https://zju3dv.github.io/InfiniDepth/#pointcloud
+*Link*: https://zju3dv.github.io/InfiniDepth/#pointcloud
 Paper: https://arxiv.org/pdf/2601.03252
 
 

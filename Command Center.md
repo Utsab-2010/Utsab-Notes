@@ -1,14 +1,14 @@
 ## Daily Tasks
-- [ ] Fold clothes and clean the wardrobe
-- [x] Clean up
+- [ ] clean the wardrobe and room
+- [ ] AGV meeting
+	- [ ] Distribute merch
+	- [ ] Discuss trip
 - [ ] Coursework
 	- [ ] Study ITC and notes
 	- [ ] Finish VLSI Lab
-	- [x] Work on Digicomm Lab Report
 - [ ] Start training AlphaZero on black hole
-- [x] Go through the Infi-Depth paper
-- [x] Clean up Depth Estimation Repo.
-	- [x] Add new to-dos to the .md
+- [ ] Go through the Infi-Depth paper
+- [ ] Clean up Depth Estimation Repo.
 
 # Weekly Goals
 - [ ] Get some standard Results with AlphaZero Training
@@ -21,6 +21,4 @@
 	- [ ] Fill the CMU-LLM work
 	- [ ] Mail Subhadip for a short meet
 	- [ ] Apply for LossFunk Residency
-	- [ ] 
 - [ ] Compile Depth-Estimation work and lock repo for now.
-- [ ] 
