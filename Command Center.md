@@ -1,15 +1,15 @@
 ## Daily Tasks
 - [ ] clean the wardrobe and room
-- [ ] AGV meeting
-	- [ ] Distribute merch
-	- [ ] Discuss trip
+- [x] AGV meeting
+	- [x] Distribute merch
+	- [x] Discuss trip
 - [ ] Coursework
 	- [ ] Study ITC and notes
 	- [ ] Finish VLSI Lab
 - [ ] Start training AlphaZero on black hole
 - [ ] Go through the Infi-Depth paper
 - [ ] Clean up Depth Estimation Repo.
-
+- [x] Basketball Practice
 # Weekly Goals
 - [ ] Get some standard Results with AlphaZero Training
 - [ ] Read more papers on IITB problem formulation
