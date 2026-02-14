@@ -194,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 481,
-    "collapsed": true
+    "width": 728
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,7 +208,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "051f87221cc5039c",
+  "active": "dccd261163b6cce0",
   "lastOpenFiles": [
     "Command Center.md",
     "Neural Implicit Fields.md",
