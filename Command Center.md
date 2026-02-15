@@ -5,7 +5,7 @@
 	- [x] Discuss trip
 - [ ] Coursework
 	- [ ] Study ITC and notes
-	- [ ] Finish VLSI Lab
+	- [x] Finish VLSI Lab
 - [ ] Start training AlphaZero on black hole
 - [ ] Go through the Infi-Depth paper
 - [ ] Clean up Depth Estimation Repo.
