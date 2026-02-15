@@ -23,5 +23,5 @@
 - [ ] Internship Applications
 	- [ ] Fill the CMU-LLM work
 	- [ ] Mail Subhadip for a short meet
-	- [ ] Apply for LossFunk Residency
+	- [x] Apply for LossFunk Residency
 - [ ] Compile Depth-Estimation work and lock repo for now.
