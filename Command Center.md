@@ -10,7 +10,7 @@
 - [ ] Go through the Infi-Depth paper
 - [ ] Clean up Depth Estimation Repo.
 - [x] Basketball Practice
-- [ ] mail people
+- [x] mail people
 	- [x] mail Shivam Vats
 - [ ] Improve Website
 # Weekly Goals
