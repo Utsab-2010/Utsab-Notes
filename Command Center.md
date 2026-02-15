@@ -10,6 +10,9 @@
 - [ ] Go through the Infi-Depth paper
 - [ ] Clean up Depth Estimation Repo.
 - [x] Basketball Practice
+- [ ] mail people
+	- [x] mail Shivam Vats
+- [ ] Improve Website
 # Weekly Goals
 - [ ] Get some standard Results with AlphaZero Training
 - [ ] Read more papers on IITB problem formulation
